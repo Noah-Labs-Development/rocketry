@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Callable, List, Optional
 import warnings
 
-from pydantic import Field, PrivateAttr, validator
+from pydantic.v1 import Field, PrivateAttr, validator
 
 from rocketry.core.task import Task
 from rocketry.core.parameters import Parameters
@@ -47,6 +47,7 @@ class TempSysPath:
                 self.sys_path.remove(path)
             except ValueError:
                 pass
+
 
 class FuncTask(Task):
     """Task that executes a function or callable.
