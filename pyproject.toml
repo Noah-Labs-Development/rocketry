@@ -38,7 +38,7 @@ classifiers = [
 dynamic = ["version"]
 dependencies = [
     'python-dateutil', 
-    'redbird@git+https://github.com/Noah-Labs-Development/red-bird',
+    'redbird@git+https://github.com/Noah-Labs-Development/red-bird#egg=v2_but_v1',
     'pydantic'
 ]
 
